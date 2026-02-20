@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: movie-app
-  namespace: default
+  namespace: movie-app
 spec:
   replicas: 5
   selector:
