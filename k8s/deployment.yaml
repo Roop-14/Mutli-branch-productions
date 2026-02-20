@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: movie-app
+  name: movie-app          # ✅ REQUIRED
+  namespace: movie-app    # ✅ OK (since you're explicitly using namespace)
 spec:
   replicas: 5
   selector:
